@@ -31,4 +31,14 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'valid_service' => [
+        'key' => 'hello',
+        'secret' => 'hello',
+    ],
+
+    'invalid_service' => [
+        'key' => 'invalid',
+        'secret' => null,
+    ]
+
 ];
