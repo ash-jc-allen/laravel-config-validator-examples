@@ -4,8 +4,80 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12524947d8c752f84bc21aaaede06bfa",
+    "content-hash": "f00042d7b7fac4784e496aa1dcaf1081",
     "packages": [
+        {
+            "name": "ashallendesign/laravel-config-validator",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ash-jc-allen/laravel-config-validator.git",
+                "reference": "e270f4bd2bb26e81f5eac6c5e49a954fd558dee4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ash-jc-allen/laravel-config-validator/zipball/e270f4bd2bb26e81f5eac6c5e49a954fd558dee4",
+                "reference": "e270f4bd2bb26e81f5eac6c5e49a954fd558dee4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/cache": "^8.0|^9.0",
+                "illuminate/container": "^8.0|^9.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "nunomaduro/larastan": "^1.0.0",
+                "orchestra/testbench": "^6.0|^7.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AshAllenDesign\\ConfigValidator\\Providers\\ConfigValidatorProvider"
+                    ],
+                    "aliases": {
+                        "ConfigValidator": "AshAllenDesign\\ConfigValidator\\Facades\\ConfigValidator"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AshAllenDesign\\ConfigValidator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ash Allen",
+                    "email": "mail@ashallendesign.co.uk"
+                }
+            ],
+            "description": "A package for validating your Laravel app's config.",
+            "homepage": "https://github.com/ash-jc-allen/laravel-config-validator",
+            "keywords": [
+                "ashallendesign",
+                "config",
+                "laravel",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/ash-jc-allen/laravel-config-validator/issues",
+                "source": "https://github.com/ash-jc-allen/laravel-config-validator/tree/v2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ash-jc-allen",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-03-23T10:56:47+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.9.3",
